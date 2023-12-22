@@ -1,57 +1,57 @@
 [
   {
-    "todo": "aboba",
+    "todo": "Complete project proposal",
     "completed": false,
-    "deadline": "Dec 28, 2023, 6:00"
+    "deadline": "Jan 15, 2024, 10:00 AM"
   },
   {
-    "todo": "netacad exam coa",
+    "todo": "Prepare for job interview",
     "completed": false,
-    "deadline": "Dec 24, 2023, 6:00"
+    "deadline": "Jan 10, 2024, 2:30 PM"
   },
   {
-    "todo": "make my bed",
+    "todo": "Exercise for 30 minutes",
     "completed": true,
-    "deadline": "Dec 28, 2023, 6:00"
+    "deadline": "Jan 15, 2024, 7:00 AM"
   },
   {
-    "todo": "abobas",
+    "todo": "Write blog post",
     "completed": false,
-    "deadline": "Dec 28, 2023, 23:09"
+    "deadline": "Jan 15, 2024, 11:30 PM"
   },
   {
-    "todo": "make my bed",
+    "todo": "Clean the house",
     "completed": false,
-    "deadline": "Dec 29, 2023, 23:05"
+    "deadline": "Jan 16, 2024, 6:00 PM"
   },
   {
-    "todo": "aboba",
+    "todo": "Read a book",
     "completed": false,
-    "deadline": "Dec 29, 2023, 03:05"
+    "deadline": "Jan 16, 2024, 9:30 AM"
   },
   {
-    "todo": "aboba",
+    "todo": "Plan weekend activities",
     "completed": false,
-    "deadline": "Dec 23, 2023, 03:04"
+    "deadline": "Jan 9, 2024, 9:00 AM"
   },
   {
-    "todo": "aboba",
+    "todo": "Attend team meeting",
     "completed": false,
-    "deadline": "Dec 23, 2023, 12:05"
+    "deadline": "Jan 9, 2024, 3:30 PM"
   },
   {
-    "todo": "aboba",
+    "todo": "Buy groceries",
     "completed": false,
-    "deadline": "Dec 23, 2023, 02:49"
+    "deadline": "Jan 9, 2024, 12:30 PM"
   },
   {
-    "todo": "aboba",
+    "todo": "Send birthday wishes",
     "completed": false,
-    "deadline": "Dec 23, 2023, 01:07"
+    "deadline": "Jan 9, 2024, 10:00 AM"
   },
   {
-    "todo": "aboba",
+    "todo": "Review project documentation",
     "completed": false,
-    "deadline": "Dec 23, 2023, 02:34"
+    "deadline": "Jan 9, 2024, 11:45 AM"
   }
 ]
