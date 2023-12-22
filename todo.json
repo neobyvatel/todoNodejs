@@ -1,0 +1,57 @@
+[
+  {
+    "todo": "aboba",
+    "completed": false,
+    "deadline": "Dec 28, 2023, 6:00"
+  },
+  {
+    "todo": "netacad exam coa",
+    "completed": false,
+    "deadline": "Dec 24, 2023, 6:00"
+  },
+  {
+    "todo": "make my bed",
+    "completed": true,
+    "deadline": "Dec 28, 2023, 6:00"
+  },
+  {
+    "todo": "abobas",
+    "completed": false,
+    "deadline": "Dec 28, 2023, 23:09"
+  },
+  {
+    "todo": "make my bed",
+    "completed": false,
+    "deadline": "Dec 29, 2023, 23:05"
+  },
+  {
+    "todo": "aboba",
+    "completed": false,
+    "deadline": "Dec 29, 2023, 03:05"
+  },
+  {
+    "todo": "aboba",
+    "completed": false,
+    "deadline": "Dec 23, 2023, 03:04"
+  },
+  {
+    "todo": "aboba",
+    "completed": false,
+    "deadline": "Dec 23, 2023, 12:05"
+  },
+  {
+    "todo": "aboba",
+    "completed": false,
+    "deadline": "Dec 23, 2023, 02:49"
+  },
+  {
+    "todo": "aboba",
+    "completed": false,
+    "deadline": "Dec 23, 2023, 01:07"
+  },
+  {
+    "todo": "aboba",
+    "completed": false,
+    "deadline": "Dec 23, 2023, 02:34"
+  }
+]
