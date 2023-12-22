@@ -75,10 +75,15 @@ async function main() {
       ]);
       const dateTimeString = `${date}T${time}:00`;
       dateTimeObj = new Date(dateTimeString);
-      if (!isNaN(dateTimeObj) && dateTimeObj > new Date()) {
-        isValidDateTime = true;
-      } else {
-        console.log("Invalid date or time.");
+      try {
+        const date = new Date(dateTimeObj);
+        if (!isNaN(date) && date > new Date()) {
+          isValidDateTime = true;
+        } else {
+          throw new Error("Invalid date or time.");
+        }
+      } catch (error) {
+        console.error("Error validating date or time:", error.message);
       }
 
       const formattedDate = new Intl.DateTimeFormat("en-US", {
