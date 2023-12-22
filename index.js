@@ -75,69 +75,28 @@ async function main() {
       ]);
       const dateTimeString = `${date}T${time}:00`;
       dateTimeObj = new Date(dateTimeString);
-      let isValidDate = false;
-      let isValidTime = false;
-      if (!isNaN(dateTimeObj)) {
-        const currentDate = new Date();
-
-        const year = dateTimeObj.getFullYear();
-        const month = dateTimeObj.getMonth();
-        const day = dateTimeObj.getDate();
-
-        const hours = dateTimeObj.getHours();
-        const minutes = dateTimeObj.getMinutes();
-
-        const currentDateWithoutTime = new Date(
-          currentDate.getFullYear(),
-          currentDate.getMonth(),
-          currentDate.getDate()
-        );
-
-        if (
-          year >= currentDate.getFullYear() &&
-          month >= currentDate.getMonth() &&
-          day >= currentDate.getDate()
-        ) {
-          isValidDate = true;
-          isValidTime = true;
-          if (
-            year === currentDate.getFullYear() &&
-            month === currentDate.getMonth() &&
-            day === currentDate.getDate()
-          ) {
-            if (hours < currentDate.getHours()) {
-              isValidTime = false;
-              console.log("Deadline cannot be in the past. Please try again.");
-            } else if (hours === currentDate.getHours()) {
-              if (minutes <= currentDate.getMinutes()) {
-                isValidTime = false;
-                console.log(
-                  "Deadline cannot be in the past. Please try again."
-                );
-              } else {
-                isValidTime = true;
-              }
-            }
-          }
-        } else {
-          console.log("Deadline cannot be in the past. Please try again.");
-        }
+      if (!isNaN(dateTimeObj) && dateTimeObj > new Date()) {
+        isValidDateTime = true;
       } else {
-        console.log("Invalid date or time. Please try again.");
+        console.log("Invalid date or time.");
       }
-      isValidDateTime = isValidDate && isValidTime;
-    }
-    const formattedDate = new Intl.DateTimeFormat("en-US", {
-      month: "short",
-      day: "numeric",
-      hour: "numeric",
-      minute: "numeric",
-      hour12: false,
-      year: "numeric",
-    }).format(dateTimeObj);
 
-    todoList.push({ todo: newTask, completed: false, deadline: formattedDate });
-    await writeTodoList(todoList, "added");
+      const formattedDate = new Intl.DateTimeFormat("en-US", {
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        hour12: false,
+        year: "numeric",
+      }).format(dateTimeObj);
+
+      todoList.push({
+        todo: newTask,
+        completed: false,
+        deadline: formattedDate,
+      });
+      await writeTodoList(todoList, "added");
+    }
   } else if (plainAction === "View to-do list") {
     const isDeadlineMissed = (deadline) => {
       const deadlineDate = new Date(deadline);
