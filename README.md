@@ -36,3 +36,8 @@ npm start
 ```bash
 git clone https://github.com/your-username/todoNodejs.git
 ```
+## Install necessary libs
+```bash
+npm install inquirer -D
+npm install chalk -D
+```
